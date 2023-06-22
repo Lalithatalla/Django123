@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is my student template</h1>
+{ % if emp_list %}
+<table>
+    <thead>
+    <th>sid</th>
+    <th>sname</th>
+    <th>saddr</th>
+    </thead>
+    {% for emp in emp_list %}
+    <tr>
+        <td>{{emp.sid}}</td>
+        <td>{{emp.sname}}</td>
+
+
+        <td>{{emp.saddr}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
